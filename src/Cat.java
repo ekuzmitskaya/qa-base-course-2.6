@@ -11,6 +11,10 @@ public class Cat extends Animal {
         System.out.println("Кошка мяукает");
     }
 
+    public void getEats(boolean var) {
+	eats = var;
+    }
+
     public Cat(int fleas) {
         this.fleas = fleas;
     }

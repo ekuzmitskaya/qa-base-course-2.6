@@ -1,7 +1,12 @@
 public class Animal {
 
-    //хвост, лапы, шерсть
+    // еда
+    private boolean eats = true;
+    public boolean getEats() {
+	return eats;
+    }
 
+    // хвост
     private boolean tail = true;
     public boolean getTail() {
         return tail;
@@ -11,6 +16,7 @@ public class Animal {
         tail = var;
     }
 
+    // лапы
     private int legs = 4;
     public int getLegs() {
         return legs;
@@ -22,11 +28,16 @@ public class Animal {
         }
     }
 
+    // шерсть
     boolean fur = true;
 
-    //спать
-
+    // спит
     public void sleep() {
         System.out.println("Животное спит");
+    }
+
+    // ест
+    public void eats() {
+	this.eats = eats;
     }
 }
